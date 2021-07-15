@@ -44,7 +44,7 @@ class BookATableFragment : Fragment(), StartersAdapter.ViewCartListener {
         startersAdapter = StartersAdapter(requireContext(), this, false)
 
         fragmentBookATableBinding!!.startersRecyclerview.layoutManager =
-            LinearLayoutManager(context)
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL,false)
 
         fragmentBookATableBinding!!.startersRecyclerview.adapter = startersAdapter
 
