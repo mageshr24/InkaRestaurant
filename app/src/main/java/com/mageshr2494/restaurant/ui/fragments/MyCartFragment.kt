@@ -1,17 +1,16 @@
 package com.mageshr2494.restaurant.ui.fragments
 
 import com.mageshr2494.restaurant.databinding.FragmentMyCartBinding
+import com.mageshr2494.restaurant.datasource.entities.StartersItem
+import com.mageshr2494.restaurant.ui.adapters.StartersAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.navigation.fragment.findNavController
+import com.mageshr2494.restaurant.CartHandle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.view.View
 import android.os.Bundle
-import android.util.Log
-import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.mageshr2494.restaurant.CartHandle
-import com.mageshr2494.restaurant.datasource.entities.StartersItem
-import com.mageshr2494.restaurant.ui.adapters.StartersAdapter
 
 class MyCartFragment : Fragment(), StartersAdapter.ViewCartListener {
 
@@ -87,7 +86,6 @@ class MyCartFragment : Fragment(), StartersAdapter.ViewCartListener {
     }
 
     override fun onClickedCount(count: Int) {
-        Log.v("onClickedCount", "" + count)
 
         getTotalAmount()
 

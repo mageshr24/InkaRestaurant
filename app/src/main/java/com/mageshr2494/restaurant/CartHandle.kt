@@ -1,18 +1,12 @@
 package com.mageshr2494.restaurant
 
 import android.content.Context
-import android.util.Log
 import com.mageshr2494.restaurant.datasource.AppDatabase
 import com.mageshr2494.restaurant.datasource.entities.StartersItem
 
 class CartHandle {
 
     companion object {
-
-//        fun getStarterItemCount(context: Context, id: Int): Int {
-//            var count = AppDatabase.getDatabase(context).MyCartDao().getStarterCount(id)
-//            return count
-//        }
 
         fun addStarterItem(context: Context, startersItem: StartersItem): Long {
             var insert = AppDatabase.getDatabase(context).MyCartDao().insert(startersItem)
@@ -21,15 +15,11 @@ class CartHandle {
 
         fun updateStarterItem(context: Context, id: Int, count: Int): Int {
             var update = AppDatabase.getDatabase(context).MyCartDao().update(id, count)
-            Log.v("update count: ", "" + count)
-            Log.v("update id: ", "" + id)
-            Log.v("update : ", "" + update)
             return update
         }
 
         fun deleteStarterItem(context: Context, id: Int): Int {
             var delete = AppDatabase.getDatabase(context).MyCartDao().delete(id)
-            Log.v("delete : ", "" + delete)
             return delete
         }
 

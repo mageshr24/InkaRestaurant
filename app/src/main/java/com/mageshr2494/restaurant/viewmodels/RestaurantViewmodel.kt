@@ -17,5 +17,4 @@ class RestaurantViewmodel() : ViewModel() {
         var starters: List<StartersItem> = gson.fromJson(starterJsonData, listPersonType)
         return starters
     }
-
 }
