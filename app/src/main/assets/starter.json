@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "itemName": "Guac de la Costa",
+        "description": "tortillas de mais, fruit de la passion, mango",
+        "price": 7,
+        "night": true,
+        "day": true
+    },
+    {
+        "id": 2,
+        "itemName": "Chicharron y Cerveza",
+        "description": "citron vert / Corona sauce",
+        "price": 5,
+        "night": true,
+        "day": false
+    },
+    {
+        "id": 3,
+        "itemName": "Soft Tacos",
+        "description": "choice of Meat on Corn",
+        "price": 6,
+        "night": true,
+        "day": false
+    },
+    {
+        "id": 4,
+        "itemName": "Cabo San",
+        "description": "oz new york steak",
+        "price": 4,
+        "night": true,
+        "day": true
+    },
+    {
+        "id": 5,
+        "itemName": "Tampiquena",
+        "description": "carne aseda or grilled chicken",
+        "price": 5,
+        "night": true,
+        "day": false
+    }
+]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bookATableFragment">
+
+    <fragment
+        android:id="@+id/bookATableFragment"
+        android:name="com.mageshr2494.restaurant.ui.fragments.BookATableFragment"
+        android:label="fragment_book_a_table"
+        tools:layout="@layout/fragment_book_a_table">
+
+        <action
+            android:id="@+id/action_bookATableFragment_to_myCartFragment"
+            app:destination="@id/myCartFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.mageshr2494.restaurant.ui.fragments.MyCartFragment"
+        android:label="fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+</navigation>
